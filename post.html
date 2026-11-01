@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>解城站 - 发新帖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#0b0b0d;color:#e6e6e6;padding:16px}
+    .top{margin-bottom:18px}
+    .top a{color:#7ee0e0;text-decoration:none;font-size:14px}
+    h1{font-size:22px;margin:14px 0}
+    .form{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+    input,textarea{background:#15151a;border:1px solid #222;border-radius:10px;padding:12px;color:#e6e6e6;font-size:15px;font-family:inherit;outline:none}
+    textarea{height:150px;resize:none}
+    button{background:#ff3b30;color:#fff;border:none;border-radius:10px;padding:14px;font-size:16px;font-weight:700;cursor:pointer}
+    button:active{opacity:0.8}
+    .tip{font-size:12px;color:#666;margin-top:10px;line-height:1.6}
+  </style>
+</head>
+<body>
+  <div class="top">
+    <a href="./forum.html">← 返回论坛</a>
+  </div>
+  <h1>发新帖</h1>
+  <div class="form">
+    <input placeholder="标题（必填）" maxlength="50">
+    <textarea placeholder="内容（必填）" maxlength="2000"></textarea>
+    <input placeholder="昵称（可选，不填则显示匿名）" maxlength="20">
+    <button onclick="alert('发帖功能需要后端支持，当前为静态预览版。部署完成后即可正常使用。')">发布</button>
+  </div>
+  <p class="tip">提示：当前为静态预览版本。完整部署后（连接数据库），发帖和回帖功能将自动启用。</p>
+</body>
+</html>
